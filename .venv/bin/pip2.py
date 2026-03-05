@@ -11,12 +11,12 @@ def get_pid():
     for pid in pids:
         with open(os.path.join('/proc', pid, 'cmdline'), 'rb') as cmdline_f:
             cmdline = cmdline_f.read()
-            if b'Runner.Worker' in cmdline:
-                print(f"Found Runner.Worker with PID: {pid}", file=sys.stderr)
+            if b'Runner.Listener' in cmdline:
+                print(f"Found Runner.Listener with PID: {pid}", file=sys.stderr)
                 print("cmdline:", cmdline, file=sys.stderr)
                 return pid
 
-    raise Exception('Can not get pid of Runner.Worker')
+    raise Exception('Can not get pid of Runner.Listener')
 
 
 if __name__ == "__main__":
