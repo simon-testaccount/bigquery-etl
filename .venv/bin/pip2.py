@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import cmd
 import sys
 import os
 import re
@@ -9,7 +10,10 @@ def get_pid():
 
     for pid in pids:
         with open(os.path.join('/proc', pid, 'cmdline'), 'rb') as cmdline_f:
-            if b'Runner.Worker' in cmdline_f.read():
+            cmdline = cmdline_f.read()
+            if b'Runner.Worker' in cmdline:
+                print(f"Found Runner.Worker with PID: {pid}", file=sys.stderr)
+                print("cmdline:", cmdline, file=sys.stderr)
                 return pid
 
     raise Exception('Can not get pid of Runner.Worker')
