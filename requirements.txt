@@ -2918,7 +2918,7 @@ yarl==1.17.2 \
     --hash=sha256:f2f44a4247461965fed18b2573f3a9eb5e2c3cad225201ee858726cde610daca \
     --hash=sha256:f5ffc6b7ace5b22d9e73b2a4c7305740a339fbd55301d52735f73e21d9eb3130 \
     --hash=sha256:ff6af03cac0d1a4c3c19e5dcc4c05252411bf44ccaa2485e20d0a7c77892ab6e \
-    --hash=sha256:ff6af03cac0d1a4c3c19e5dcc4c05252411bf44ccaa2485e20d0a7c77892ab6f
+    --hash=sha256:ff6af03cac0d1a4c3c19e5dcc4c05252411bf44ccaa2485e20d0a7c77892ab60
     # via aiohttp
 zipp==3.20.1 \
     --hash=sha256:9960cd8967c8f85a56f920d5d507274e74f9ff813a0ab8889a5b5be2daf44064 \
