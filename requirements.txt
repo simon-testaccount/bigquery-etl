@@ -2918,7 +2918,7 @@ yarl==1.17.2 \
     # via aiohttp
 zipp==3.20.1 \
     --hash=sha256:9960cd8967c8f85a56f920d5d507274e74f9ff813a0ab8889a5b5be2daf44064 \
-    --hash=sha256:c22b14cc4763c5a5b04134207736c107db42e9d3ef2d9779d465f5f1bcba572b
+    --hash=sha256:c22b14cc4763c5a5b04134207736c107db42e9d3ef2d9779d465f5f1bcba572d
     # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
