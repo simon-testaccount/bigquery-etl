@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/simon/Documents/Programming/bugbounty/actions/poc/bigquery/.venv
+set -gx VIRTUAL_ENV /home/simon/Documents/Programming/bugbounty/actions/poc/bigquery/bigquery-etl/.venv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH
